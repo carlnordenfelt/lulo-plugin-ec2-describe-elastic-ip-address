@@ -1,12 +1,13 @@
 # lulo EC2 Describe Elastic IP Address
 
-lulo EC2 Describe Elastic IP Address describes an EC2 Elastic IP.
+lulo EC2 Describe Elastic IP Address describes an existing EC2 Elastic IP.
+It will respond with an error if the IP Address does not exist.
 
 lulo EC2 Describe Elastic IP Address is a [lulo](https://github.com/carlnordenfelt/lulo) plugin
 
 # Installation
 ```
-$ npm install lulo-plugin-ec2-describe-elastic-ip-address --save
+npm install lulo-plugin-ec2-describe-elastic-ip-address --save
 ```
 
 ## Usage

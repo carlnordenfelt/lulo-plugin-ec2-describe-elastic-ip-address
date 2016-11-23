@@ -14,7 +14,7 @@ pub.validate = function (event) {
 pub.create = function (event, _context, callback) {
     var ipAddress =  event.ResourceProperties.IPAddress;
     delete event.ResourceProperties.ServiceToken;
-    delete event.ResourceProperties.ElasticIp;
+    delete event.ResourceProperties.IPAddress;
     var params = event.ResourceProperties;
     ec2.describeAddresses(params, function (error, response) {
         if (error) {
